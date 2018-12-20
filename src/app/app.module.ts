@@ -8,6 +8,7 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { SideComponent } from './components/side/side.component';
 import { PlayerComponent } from './components/player/player.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

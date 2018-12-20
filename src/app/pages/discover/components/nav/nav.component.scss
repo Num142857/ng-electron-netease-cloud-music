@@ -1,0 +1,22 @@
+.discover-nav{
+  height: 44px;;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+  ul{
+    display: inline-block;
+    li{
+      display: inline-block;
+      margin-left: 65px;
+      a{
+        color: #323232;
+        text-decoration: none;
+        line-height: 44px;
+        font-size: 14px;
+
+      }
+      &.active a{
+          color:#a63117;
+      }
+    }
+  }
+}

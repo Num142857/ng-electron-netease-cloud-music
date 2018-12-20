@@ -6,4 +6,95 @@
   left: 0;
   border-top: 1px solid #b0b0b0;
   background: rgba(246, 246, 246, 0.98);
+
+  .player-btn{
+    height: 37px;
+    width: 37px;
+    margin-left:40px;
+    margin-top: 15px;
+    background: #c64740;
+    padding-top:11px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    .btmbar-icon{
+      position: absolute;
+      left: 13px;
+      top: 11px;
+    }
+  }
+  .next-btn{
+    @extend .player-btn;
+    height: 33px;
+    width: 33px;
+    margin-left:23px;
+    margin-top: 17px;
+    .btmbar-icon{
+      left: 11px;
+      top: 10px;
+    }
+  }
+  .progress{
+    height: 4px;
+    border-radius: 2px;
+    background: #8d8d8e;
+    margin: 32px 275px 0  173px;
+    position: relative;
+    .time-dot{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      transform: translate(-6px,-6px);
+      position: relative;
+      left: 0px;
+      top: 0px;
+      border-radius: 50%;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .time-info{
+      transform: translateX(100%);
+      position: absolute;
+      right: -10px;
+      top: 0;
+      bottom: 0;
+      margin:0 auto;
+      font-size: 12px;
+      line-height: 7px;
+      color:#888;
+    }
+  }
+  .volume{
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    width: 120px;
+    .volume-progress{
+      width: 100px;
+      height: 4px;
+      border-radius: 2px;
+      background: #8d8d8e;
+      float: right;
+      margin-top: 6px;
+      .volume-dot{
+        display: inline-block;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translate(0,-7px);
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .lyric{
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
 }

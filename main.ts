@@ -78,7 +78,7 @@ try {
   // 登录窗口最大化
   ipcMain.on('window-max', function() {
     if (win.isMaximized()) {
-      win.restore();
+      win.unmaximize();
     } else {
       win.maximize();
     }
