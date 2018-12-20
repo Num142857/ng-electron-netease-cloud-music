@@ -1,14 +1,7 @@
 {
   "name": "netease-cloud-music",
-  "version": "5.1.0",
-  "description": "Angular 7 with Electron (Typescript + SASS + Hot Reload)",
-  "keywords": [
-    "angular",
-    "angular 7",
-    "electron",
-    "typescript",
-    "sass"
-  ],
+  "version": "0.0.1",
+  "description": "Angular版本的 electron 网易云音乐客户端",
   "main": "main.js",
   "private": true,
   "scripts": {

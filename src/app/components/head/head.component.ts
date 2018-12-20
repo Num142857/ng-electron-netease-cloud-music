@@ -23,5 +23,11 @@ export class HeadComponent implements OnInit {
   close(event: any): void {
     this.ipcRenderer.send('window-close');
   }
+  mouseEnter(event: any): void {
+    event.target.classList.add('hover');
+  }
+  mouseLeave(event: any): void {
+    event.target.classList.remove('hover');
+  }
 
 }

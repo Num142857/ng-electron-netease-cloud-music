@@ -2,7 +2,7 @@
   <div class="head-bar-scale">
           <span class="topbar-icon icon-scale"></span>
   </div>
-  <div class="head-bar-controls">
+  <div class="head-bar-controls" (mouseenter)="mouseEnter($event)" (mouseleave)="mouseLeave($event)">
       <span class="topbar-icon icon-close" (click)="close($event)"></span>
       <span class="topbar-icon icon-mini" (click)="mini($event)"></span>
       <span class="topbar-icon icon-expand" (click)="expand($event)"></span>

@@ -7,7 +7,22 @@
       height: 22px;
       padding: 5px;
       -webkit-app-region: no-drag;
+
+      &.hover{
+        .icon-close {
+          background-position: -86px -136px;
+        }
+
+        .icon-mini {
+          background-position: -41px -136px;
+        }
+
+        .icon-expand {
+          background-position: -64px -136px;
+        }
+      }
       .topbar-icon{
+        display: inline-block;
         margin-right: 10px;
         cursor: pointer;
     }
@@ -18,6 +33,7 @@
         float:right;
     }
     .head-content{
+      overflow: hidden;
       .icon-logo{
         float: left;
         margin-top: 5px;
