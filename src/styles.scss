@@ -1,7 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/scss/grid";
+@import "assets/scss/btn";
+@import "assets/scss/icon";
+
 html, body {
   margin: 0;
   padding: 0;
-
   height: 100%;
+  overflow: hidden;
+  font-family: Helvetica, sans-serif;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+.hide-one {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: rgba(171, 171, 171,.8);
+}
+
+::-webkit-scrollbar-button, ::-webkit-scrollbar-corner {
+  display: none;
+}
+
+::selection {
+  color: #fff;
+  background-color: rgba(102, 102, 102, 0.8);
 }

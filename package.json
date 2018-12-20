@@ -1,12 +1,7 @@
 {
-  "name": "angular-electron",
+  "name": "netease-cloud-music",
   "version": "5.1.0",
   "description": "Angular 7 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
-  "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
-  },
   "keywords": [
     "angular",
     "angular 7",

@@ -1,0 +1,97 @@
+.head-bar{
+    height: 60px;
+    background: rgb(183, 39, 18);
+    -webkit-app-region: drag;
+    .head-bar-controls{
+      width:76px;
+      height: 22px;
+      padding: 5px;
+      -webkit-app-region: no-drag;
+      .topbar-icon{
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    }
+    .head-bar-scale{
+      -webkit-app-region: no-drag;
+        margin: 5px;
+        float:right;
+    }
+    .head-content{
+      .icon-logo{
+        float: left;
+        margin-top: 5px;
+        margin-left: 22px;
+      }
+      .nav-conytrols{
+        float: left;
+        margin-left: 68px;
+        width: 53px;
+        height: 25px;
+        .back{
+          float: left;
+        }
+        .forward{
+          float: left;
+        }
+      }
+      .search{
+        float: left;
+        width: 235px;
+        height: 25px;
+        border-radius: 25px;
+        margin-left: 10px;
+        background: #fff;
+        .icon-search{
+          margin: 6px;
+          float: left;
+        }
+        input{
+          width: calc(100% - 26px);
+          padding: 0  2px 0;
+          height: 100%;
+          border:none;
+          outline: none;
+          font-size: 14px;
+          border-radius: 25px;
+          line-height: 25px;
+          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 12px;
+          }
+        }
+      }
+      .message{
+        margin-top:6px;
+        float: right;
+      }
+      .setting{
+        float: right;
+        padding-right: 58px;
+        margin-top:6px;
+        margin-left: 32px;
+        margin-right: 20px
+      }
+      .user-content{
+        position: absolute;
+        top:0 ;
+        right: 0;
+        width: 66px;
+        height: 57px;
+        border-left: 1px solid #952813;
+        .user-pic{
+          width: 24px;
+          height: 24px;
+          border-radius: 24px;
+          background: #fff;
+          margin-left: 16px;
+          margin-top: 24px;
+          float: left;
+        }
+        .icon-dropdown{
+          float: left;
+          margin-top: 36px;
+          margin-left: 6px;
+        }
+      }
+    }
+}

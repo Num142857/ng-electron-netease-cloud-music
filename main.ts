@@ -1,4 +1,4 @@
-import { app, BrowserWindow, screen } from 'electron';
+import { app, BrowserWindow, screen , ipcMain } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 
@@ -13,10 +13,13 @@ function createWindow() {
 
   // Create the browser window.
   win = new BrowserWindow({
-    x: 0,
-    y: 0,
-    width: size.width,
-    height: size.height
+    // x: 0,
+    // y: 0,
+    // width: size.width,
+    // height: size.height,
+    width: 1000,
+    height: 670 ,
+    frame: false,
   });
 
   if (serve) {
@@ -67,6 +70,23 @@ try {
       createWindow();
     }
   });
+
+  // 登录窗口最小化
+  ipcMain.on('window-min', function() {
+    win.minimize();
+  });
+  // 登录窗口最大化
+  ipcMain.on('window-max', function() {
+    if (win.isMaximized()) {
+      win.restore();
+    } else {
+      win.maximize();
+    }
+  });
+  ipcMain.on('window-close', function() {
+    win.close();
+  });
+
 
 } catch (e) {
   // Catch Error

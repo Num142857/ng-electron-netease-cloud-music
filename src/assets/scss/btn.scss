@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 0 5px;
+
+  &.btn-default {
+    padding: 5px 20px;
+    color: rgb(50, 50, 50);
+    background-color: #fff;
+    border-color: rgb(201, 201, 201);
+  }
+
+  &.btn-primary {
+    color: #fff;
+    background-color: rgb(59, 133, 206);
+    border-color: rgb(45, 111, 193);
+  }
+
+  &.btn-md {
+    font-size: 14px;
+  }
+}

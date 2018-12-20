@@ -1,0 +1,309 @@
+.topbar-icon {
+  display: inline-block;
+  background: url('assets/imgs/topbar.png');
+  background-size: 206px 370px;
+  &.icon-prev {
+    background-position: 0 -240px;
+    width: 26px;
+    height: 24px;
+    &:not(.disabled):active {
+      background-position: 0 -300px;
+    }
+    &.disabled {
+      background-position: 0 -330px;
+    }
+  }
+
+  &.icon-next {
+    background-position: -26px -240px;
+    width: 27px;
+    height: 24px;
+    &:not(.disabled):active {
+      background-position: -26px -300px;
+    }
+    &.disabled {
+      background-position: -26px -330px;
+    }
+  }
+
+  &.icon-logo {
+    background-position: 0 -184px;
+    width: 138px;
+    height: 24px;
+  }
+
+  &.icon-search {
+    background-position: -1px 0;
+    width: 14px;
+    height: 14px;
+  }
+
+  &.icon-close {
+    width: 12px;
+    height: 12px;
+    background-position: -86px -120px;
+  }
+
+  &.icon-mini {
+    width: 12px;
+    height: 12px;
+    background-position: -41px -120px;
+  }
+
+  &.icon-expand {
+    width: 12px;
+    height: 12px;
+    background-position: -64px -120px;
+  }
+
+  &.icon-scale {
+    width: 14px;
+    height: 12px;
+    background-position: 0 -117px;
+  }
+
+  &.icon-msg {
+    width: 18px;
+    height: 14px;
+    background-position: -39px -53px;
+    &:active {
+      background-position: -39px -95px;
+    }
+  }
+
+  &.icon-setting {
+    width: 16px;
+    height: 16px;
+    background-position: -74px -52px;
+    &:active {
+      background-position: -74px -94px;
+    }
+  }
+
+  &.icon-dropdown {
+    width: 8px;
+    height: 4px;
+    background-position: -13px -57px;
+  }
+}
+
+.side-icon {
+  display: inline-block;
+  background: url('assets/imgs/sidebar.png');
+  background-size: 260px 24px;
+  &.icon-music {
+    width: 15px;
+    height: 14px;
+    background-position: -111px -4px;
+  }
+
+  &.icon-fm {
+    width: 15px;
+    height: 13px;
+    background-position: -224px -4px;
+  }
+
+  &.icon-mv {
+    width: 16px;
+    height: 14px;
+    background-position: -69px -3px;
+  }
+
+  &.icon-friends {
+    width: 16px;
+    height: 14px;
+    background-position: -129px -3px;
+  }
+
+  &.icon-itunes {
+    width: 18px;
+    height: 18px;
+    background-position: -147px -2px;
+  }
+
+  &.icon-download {
+    width: 16px;
+    height: 15px;
+    background-position: -166px -3px;
+  }
+
+  &.icon-radio {
+    width: 16px;
+    height: 17px;
+    background-position: -184px -2px;
+  }
+
+  &.icon-like {
+    width: 16px;
+    height: 14px;
+    background-position: -91px -4px;
+  }
+
+  &.icon-list {
+    width: 16px;
+    height: 14px;
+    background-position: -204px -4px;
+  }
+
+  &.icon-add {
+    width: 18px;
+    height: 18px;
+    background-position: -24px -3px;
+  }
+
+  &.icon-right-arrow {
+    width: 7px;
+    height: 10px;
+    background-position: -6px -7px;
+  }
+}
+
+.btmbar-icon {
+  display: inline-block;
+  background: url('assets/imgs/btmbar.png') no-repeat -110px -110px;
+  background-size: 112px 772px;
+  &.icon-like {
+    width: 16px;
+    height: 15px;
+    background-position: 0 -556px;
+    &:hover {
+      background-position: -22px -556px;
+    }
+  }
+
+  &.icon-liked {
+    width: 16px;
+    height: 15px;
+    background-position: -44px -556px;
+  }
+
+  &.icon-delete {
+    width: 13px;
+    height: 15px;
+    background-position: -21px -530px;
+    &:hover {
+      background-position: -21px -490px;
+    }
+  }
+
+  &.icon-img-hover {
+    width: 59px;
+    height: 59px;
+    background-position: -23px -625px;
+  }
+
+  &.icon-pause {
+    width: 10px;
+    height: 14px;
+    background-position: -13px -11px;
+  }
+
+  &.icon-play {
+    width: 13px;
+    height: 15px;
+    background-position: -12px -46px;
+  }
+
+  &.icon-prev {
+    width: 10px;
+    height: 12px;
+    background-position: -19px -126px;
+  }
+
+  &.icon-next {
+    width: 10px;
+    height: 12px;
+    background-position: -18px -173px;
+  }
+
+  &.icon-volume-on {
+    width: 16px;
+    height: 12px;
+    background-position: 0 -290px;
+  }
+
+  &.icon-volume-off {
+    width: 16px;
+    height: 12px;
+    background-position: 0 -316px;
+  }
+
+  &.icon-random {
+    width: 16px;
+    height: 14px;
+    background-position: 0 -338px;
+  }
+
+  &.icon-loop {
+    width: 16px;
+    height: 14px;
+    background-position: 0 -362px;
+  }
+
+  &.icon-single {
+    width: 16px;
+    height: 14px;
+    background-position: 0 -388px;
+  }
+
+  &.icon-lyric-on {
+    width: 16px;
+    height: 16px;
+    background-position: -82px -286px;
+  }
+
+  &.icon-lyric-off {
+    width: 16px;
+    height: 16px;
+    background-position: -82px -316px;
+  }
+
+  &.icon-play-list {
+    width: 18px;
+    height: 13px;
+    background-position: 0 -444px;
+  }
+
+  &.icon-loading {
+    background: url('assets/imgs/loading.gif') no-repeat 0 0;
+    background-color: #fff;
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.user-icon {
+  display: inline-block;
+  background: url('assets/imgs/user.png') no-repeat;
+  background-size: 138px 800px;
+  &.icon-vip {
+    width: 16px;
+    height: 14px;
+    background-position: -120px -681px;
+  }
+
+  &.icon-config {
+    width: 16px;
+    height: 16px;
+    background-position: -95px -705px;
+  }
+
+  &.icon-phone {
+    width: 12px;
+    height: 16px;
+    background-position: -122px -705px;
+  }
+
+  &.icon-logout {
+    width: 14px;
+    height: 14px;
+    background-position: -96px -681px;
+  }
+
+  &.icon-right-arrow {
+    width: 7px;
+    height: 10px;
+    background-position: -70px -709px;
+  }
+}
