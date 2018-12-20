@@ -3,7 +3,7 @@ import {ElectronService} from '@services/electron.service';
 @Component({
   selector: 'app-head',
   templateUrl: './head.component.html',
-  styleUrls: ['./head.component.less']
+  styleUrls: ['./head.component.scss']
 })
 
 export class HeadComponent implements OnInit {
