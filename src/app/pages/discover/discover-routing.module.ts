@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {SuggestComponent} from './suggest/suggest.component';
+import { DiscoverComponent } from './discover.component';
 const routes: Routes = [
   {
-    path: 'suggest',
-    component: SuggestComponent,
+    path: '',
+    component: DiscoverComponent,
+    children: [{
+      path: 'suggest',
+      component: SuggestComponent,
+    }]
   }
 ];
 

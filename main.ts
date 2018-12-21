@@ -17,6 +17,8 @@ function createWindow() {
     // y: 0,
     // width: size.width,
     // height: size.height,
+    'minHeight': 670,
+    'minWidth': 1000,
     width: 1000,
     height: 670 ,
     frame: false,
