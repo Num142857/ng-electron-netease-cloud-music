@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DiscoverService } from '../services/discover.service';
 @Component({
   selector: 'app-suggest',
   templateUrl: './suggest.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuggestComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: DiscoverService) { }
 
   ngOnInit() {
+    this.service.getConfig().subscribe((resp) => {
+      console.log(resp);
+    });
   }
 
 }
