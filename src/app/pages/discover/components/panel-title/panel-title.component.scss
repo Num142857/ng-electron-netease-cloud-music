@@ -1,9 +1,12 @@
 .title{
   border-bottom: 1px solid #e1e1e1;
+  position: relative;
   .title-text{
     display: inline-block;
     font-size: 20px;
     position: relative;
+    padding:0 4px;
+    line-height: 30px;
     &::before{
       content: "";
       display: inline-block;
@@ -18,7 +21,8 @@
   .sub-title-text{
     display: inline-block;
     font-size: 12px;
-    // line-height: 18px;
+    position: relative;
+    top:-2px;
+    left:6px;
   }
-
 }
