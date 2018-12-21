@@ -1,0 +1,24 @@
+.panel-item {
+  display: inline-block;
+  width: 150px;
+  margin-left: 44px;
+  margin-bottom:40px;
+  .item-pic {
+    height: 150px;
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .item-dec {
+    font-size: 14px;
+    line-height: 24px;
+    height: 48px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
