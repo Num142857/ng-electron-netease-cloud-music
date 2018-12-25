@@ -7,8 +7,11 @@ import { NavComponent } from './components/nav/nav.component';
 import { DiscoverComponent } from './discover.component';
 import { PanelTitleComponent } from './components/panel-title/panel-title.component';
 import { PanelItemComponent } from './components/panel-item/panel-item.component';
+import { IndividuationComponent } from './components/individuation/individuation.component';
+import { NewSongComponent } from './components/new-song/new-song.component';
 @NgModule({
-  declarations: [SuggestComponent, NavComponent, DiscoverComponent, PanelTitleComponent, PanelItemComponent],
+  declarations: [SuggestComponent, NavComponent,
+    DiscoverComponent, PanelTitleComponent, PanelItemComponent, IndividuationComponent, NewSongComponent],
   imports: [
     CommonModule,
     DiscoverRoutingModule

@@ -1,0 +1,11 @@
+<div class="new-song">
+  <div class="new-song-head"></div>
+  <div class="list">
+    <ul>
+      <li *ngFor="let item of topSong;index as i">
+        <span class="index">{{i+1}}</span>
+        {{item.name}}
+      </li>
+    </ul>
+  </div>
+</div>

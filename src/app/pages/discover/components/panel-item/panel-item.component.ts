@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {DjRadio} from '../../services/discover.service';
+import {Playlist} from '../../services/discover.service';
 @Component({
   selector: 'app-panel-item',
   templateUrl: './panel-item.component.html',
@@ -8,9 +8,8 @@ import {DjRadio} from '../../services/discover.service';
 export class PanelItemComponent implements OnInit {
 
   constructor() { }
-  @Input() data: DjRadio;
+  @Input() data: Playlist;
   ngOnInit() {
-    console.log(this.data);
   }
 
 }

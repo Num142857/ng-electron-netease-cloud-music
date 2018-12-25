@@ -1,0 +1,9 @@
+<div class="individuation">
+  <div class='individuation-item' *ngFor="let item of data">
+    <div class="pic">
+      <img [src]="item.picUrl" alt="">
+    </div>
+    <div class="title">{{item.name}}</div>
+    <div class="desc">{{item.copywriter}}</div>
+  </div>
+</div>

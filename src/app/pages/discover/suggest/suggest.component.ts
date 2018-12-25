@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DiscoverService, Recommend, DjRadio } from '../services/discover.service';
+import { DiscoverService, Playlist, PersonalizedResult , Datum } from '../services/discover.service';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-suggest',
@@ -12,10 +12,18 @@ import { Observable } from 'rxjs';
 export class SuggestComponent implements OnInit {
 
   constructor(private service: DiscoverService) { }
-  recommendList: DjRadio[];
+  recommendList: Playlist[];
+  personalized: PersonalizedResult[];
+  topSong: Datum[];
   ngOnInit() {
      this.service.getRecommend().subscribe(res => {
-      this.recommendList = res.djRadios;
+      this.recommendList = res.playlists;
+     });
+     this.service.getPersonalized().subscribe(res => {
+      this.personalized = res.result;
+     });
+     this.service.toSong().subscribe(res => {
+      this.topSong = res.data;
      });
   }
 

@@ -1,0 +1,39 @@
+.new-song{
+  margin-top:22px;
+  margin-bottom:22px;
+  border:1px solid #efeeef;
+  height: 330px;
+.new-song-head{
+  background: #fafbfa;
+  height: 30px;
+}
+.list{
+  height: calc(100% - 30px);
+  ul{
+    list-style: none;
+    li{
+      width: 50%;
+      height: 33px;
+      float: left;
+      border-bottom: 1px solid #efeeef;
+      line-height: 33px;
+      font-size: 12px;
+      &:nth-child(odd){
+        border-right: 1px solid #efeeef;
+        padding-left:20px;
+      }
+      &:nth-child(even){
+
+        padding-left:28px;
+      }
+      &:nth-child(4n),&:nth-child(4n -1) {
+        background: #fafafa;
+    }
+      .index{
+        color:#8c8d8d;
+        padding-right:20px;
+      }
+    }
+  }
+}
+}
