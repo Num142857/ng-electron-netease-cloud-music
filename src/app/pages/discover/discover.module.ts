@@ -10,9 +10,16 @@ import { PanelItemComponent } from './components/panel-item/panel-item.component
 import { IndividuationComponent } from './components/individuation/individuation.component';
 import { NewSongComponent } from './components/new-song/new-song.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { TabNavComponent } from './components/tab-nav/tab-nav.component';
 @NgModule({
   declarations: [SuggestComponent, NavComponent,
-    DiscoverComponent, PanelTitleComponent, PanelItemComponent, IndividuationComponent, NewSongComponent, LeaderboardComponent],
+    DiscoverComponent,
+    PanelTitleComponent,
+    PanelItemComponent,
+    IndividuationComponent,
+    NewSongComponent,
+    LeaderboardComponent,
+    TabNavComponent],
   imports: [
     CommonModule,
     DiscoverRoutingModule
