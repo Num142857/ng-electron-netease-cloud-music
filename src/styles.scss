@@ -24,7 +24,9 @@ html, body {
   right: 0;
   box-sizing: border-box;
 }
-
+a{
+  text-decoration: none;
+}
 .clearfix:after {
   content: ".";
   display: block;

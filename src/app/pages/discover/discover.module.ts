@@ -11,6 +11,9 @@ import { IndividuationComponent } from './components/individuation/individuation
 import { NewSongComponent } from './components/new-song/new-song.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { TabNavComponent } from './components/tab-nav/tab-nav.component';
+import { LeaderboardItemComponent } from './components/leaderboard-item/leaderboard-item.component';
+import { OfficialComponent } from './leaderboard/official/official.component';
+import { GlobalComponent } from './leaderboard/global/global.component';
 @NgModule({
   declarations: [SuggestComponent, NavComponent,
     DiscoverComponent,
@@ -19,7 +22,10 @@ import { TabNavComponent } from './components/tab-nav/tab-nav.component';
     IndividuationComponent,
     NewSongComponent,
     LeaderboardComponent,
-    TabNavComponent],
+    TabNavComponent,
+    LeaderboardItemComponent,
+    OfficialComponent,
+    GlobalComponent],
   imports: [
     CommonModule,
     DiscoverRoutingModule

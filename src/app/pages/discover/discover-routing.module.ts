@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import {SuggestComponent} from './suggest/suggest.component';
 import { DiscoverComponent } from './discover.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { OfficialComponent } from './leaderboard/official/official.component';
+import { GlobalComponent } from './leaderboard/global/global.component';
+
+
 const routes: Routes = [
   {
     path: '',
@@ -15,6 +19,16 @@ const routes: Routes = [
       {
       path: 'leaderboard',
       component: LeaderboardComponent,
+      children: [
+          {
+            path: 'official',
+            component: OfficialComponent,
+          },
+          {
+            path: 'global',
+            component: GlobalComponent,
+          },
+      ]
     },
   ]
   }
