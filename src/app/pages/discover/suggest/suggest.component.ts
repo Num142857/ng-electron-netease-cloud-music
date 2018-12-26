@@ -23,7 +23,8 @@ export class SuggestComponent implements OnInit {
       this.personalized = res.result;
      });
      this.service.toSong().subscribe(res => {
-      this.topSong = res.data;
+     this.topSong = res.data.splice(0, 20);
+      console.log( this.topSong);
      });
   }
 

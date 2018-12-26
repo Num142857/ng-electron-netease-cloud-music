@@ -2,21 +2,24 @@
   margin-top:22px;
   margin-bottom:22px;
   border:1px solid #efeeef;
-  height: 330px;
+  height: 332px;
 .new-song-head{
   background: #fafbfa;
   height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-indent: 45px;
+
 }
 .list{
-  height: calc(100% - 30px);
+  height: 300px;
   ul{
     list-style: none;
     li{
       width: 50%;
-      height: 33px;
+      height: 30px;
       float: left;
-      border-bottom: 1px solid #efeeef;
-      line-height: 33px;
+      line-height: 30px;
       font-size: 12px;
       &:nth-child(odd){
         border-right: 1px solid #efeeef;
@@ -31,9 +34,15 @@
     }
       .index{
         color:#8c8d8d;
-        padding-right:20px;
+        padding-right:16px;
+      }
+      .artist{
+        float: right;
+        padding-right:30px;
+        line-height: 30px;
       }
     }
   }
 }
 }
+

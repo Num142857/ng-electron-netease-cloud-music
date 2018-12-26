@@ -1,10 +1,11 @@
 <div class="new-song">
-  <div class="new-song-head"></div>
+  <div class="new-song-head">播放全部</div>
   <div class="list">
     <ul>
       <li *ngFor="let item of topSong;index as i">
         <span class="index">{{i+1}}</span>
         {{item.name}}
+        <span class="artist">{{item.artists[0].name}}</span>
       </li>
     </ul>
   </div>
