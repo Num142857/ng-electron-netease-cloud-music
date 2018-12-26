@@ -10,5 +10,11 @@
 </head>
 <body>
   <app-root></app-root>
+  <script>
+  window && (window.ELECTRON_DISABLE_SECURITY_WARNINGS = true);
+  window && (window.ELECTRON_ENABLE_SECURITY_WARNINGS = false);
+  // process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = true;
+  // process.env.ELECTRON_ENABLE_SECURITY_WARNINGS = false;
+</script>
 </body>
 </html>
