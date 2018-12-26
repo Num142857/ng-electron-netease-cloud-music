@@ -9,9 +9,10 @@ import { PanelTitleComponent } from './components/panel-title/panel-title.compon
 import { PanelItemComponent } from './components/panel-item/panel-item.component';
 import { IndividuationComponent } from './components/individuation/individuation.component';
 import { NewSongComponent } from './components/new-song/new-song.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 @NgModule({
   declarations: [SuggestComponent, NavComponent,
-    DiscoverComponent, PanelTitleComponent, PanelItemComponent, IndividuationComponent, NewSongComponent],
+    DiscoverComponent, PanelTitleComponent, PanelItemComponent, IndividuationComponent, NewSongComponent, LeaderboardComponent],
   imports: [
     CommonModule,
     DiscoverRoutingModule
