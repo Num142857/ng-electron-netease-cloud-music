@@ -18,6 +18,8 @@ const routes: Routes = [
     },
       {
       path: 'leaderboard',
+      // redirectTo: 'discover/suggest/leaderboard/official',
+      // pathMatch: 'full',
       component: LeaderboardComponent,
       children: [
           {
@@ -30,6 +32,11 @@ const routes: Routes = [
           },
       ]
     },
+      // {
+  //   path: 'suggest/leaderboard',
+  //   redirectTo: 'discover/suggest/leaderboard/official',
+  //   // pathMatch: 'full',
+  // },
   ]
   }
 ];

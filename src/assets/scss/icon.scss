@@ -311,26 +311,26 @@
 .rank-icon{
   display: inline-block;
   background: url('assets/imgs/rank_txt.png') no-repeat;
-  background-size: 250px 620px;
-  .new-icon{
-    height: 100px;
-    width: 250px;
-    background-position: -122px -705px;
+  background-size: 125px 310px;
+  &.new-icon{
+    height: 60px;
+    width: 125px;
+    background-position: 0 0;
   }
-  .hot-icon{
-    height: 100px;
-    width: 250px;
+  &.hot-icon{
+    height: 60px;
+    width: 125px;
   }
-  .origin-icon{
-    height: 100px;
-    width: 250px;
+  &.origin-icon{
+    height: 60px;
+    width: 125px;
   }
-  .electricity-icon{
-    height: 100px;
-    width: 250px;
+  &.electricity-icon{
+    height: 60px;
+    width: 125px;
   }
-  .speed-icon{
-    height: 100px;
-    width: 250px;
+  &.speed-icon{
+    height: 60px;
+    width: 125px;
   }
 }

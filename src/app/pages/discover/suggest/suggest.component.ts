@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DiscoverService, Playlist, PersonalizedResult , Datum } from '../services/discover.service';
+import { ApiService } from '@services/api.service';
+import { Playlist, PersonalizedResult , Datum } from '@services/api.interface';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-suggest',
@@ -11,7 +12,7 @@ import { Observable } from 'rxjs';
 
 export class SuggestComponent implements OnInit {
 
-  constructor(private service: DiscoverService) { }
+  constructor(private service: ApiService) { }
   recommendList: Playlist[];
   personalized: PersonalizedResult[];
   topSong: Datum[];
@@ -22,7 +23,7 @@ export class SuggestComponent implements OnInit {
      this.service.getPersonalized().subscribe(res => {
       this.personalized = res.result;
      });
-     this.service.toSong().subscribe(res => {
+     this.service.topSong().subscribe(res => {
      this.topSong = res.data.splice(0, 20);
       console.log( this.topSong);
      });

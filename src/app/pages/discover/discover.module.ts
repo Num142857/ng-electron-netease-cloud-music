@@ -11,11 +11,12 @@ import { IndividuationComponent } from './components/individuation/individuation
 import { NewSongComponent } from './components/new-song/new-song.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { TabNavComponent } from './components/tab-nav/tab-nav.component';
-import { LeaderboardItemComponent } from './components/leaderboard-item/leaderboard-item.component';
 import { OfficialComponent } from './leaderboard/official/official.component';
 import { GlobalComponent } from './leaderboard/global/global.component';
 @NgModule({
-  declarations: [SuggestComponent, NavComponent,
+  declarations: [
+    SuggestComponent,
+    NavComponent,
     DiscoverComponent,
     PanelTitleComponent,
     PanelItemComponent,
@@ -23,7 +24,6 @@ import { GlobalComponent } from './leaderboard/global/global.component';
     NewSongComponent,
     LeaderboardComponent,
     TabNavComponent,
-    LeaderboardItemComponent,
     OfficialComponent,
     GlobalComponent],
   imports: [

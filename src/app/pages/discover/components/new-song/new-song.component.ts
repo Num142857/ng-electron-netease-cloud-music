@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Datum} from '../../services/discover.service';
+import {Datum} from '../../../../services/api.interface';
 @Component({
   selector: 'app-new-song',
   templateUrl: './new-song.component.html',

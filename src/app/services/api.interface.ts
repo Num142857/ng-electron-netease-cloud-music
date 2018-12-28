@@ -1,24 +1,3 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-@Injectable({
-  providedIn: 'root'
-})
-export class DiscoverService {
-
-  constructor(private http: HttpClient) {
-  }
-  baseUrl: String = 'http://118.24.210.32:3000';
-  getRecommend(): Observable<Recommend> {
-    return this.http.get<Recommend>(`${this.baseUrl}/top/playlist?limit=8`);
-  }
-  getPersonalized(): Observable<Personalized> {
-    return this.http.get<Personalized>(`${this.baseUrl}/personalized?limit=4`);
-  }
-  toSong(): Observable<TopSong> {
-    return this.http.get<TopSong>(`${this.baseUrl}/top/song?limit=20`);
-  }
-}
 export interface Recommend {
   playlists: Playlist[];
   total: number;

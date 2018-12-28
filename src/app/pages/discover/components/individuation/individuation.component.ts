@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {PersonalizedResult} from '../../services/discover.service';
+import {PersonalizedResult} from '../../../../services/api.interface';
 @Component({
   selector: 'app-individuation',
   templateUrl: './individuation.component.html',

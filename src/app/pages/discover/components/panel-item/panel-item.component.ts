@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Playlist} from '../../services/discover.service';
+import {Playlist} from '../../../../services/api.interface';
 @Component({
   selector: 'app-panel-item',
   templateUrl: './panel-item.component.html',

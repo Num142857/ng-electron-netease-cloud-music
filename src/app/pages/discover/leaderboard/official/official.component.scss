@@ -1,0 +1,38 @@
+.offical-item{
+  width:274px;
+  height: 360px;
+  margin-top:20px;
+  border: 1px solid #ededed;
+  .head{
+    position: relative;
+    width:274px;
+    height: 80px;
+    background-color: #c8605d;
+    .rank-icon{
+      position: absolute;
+      left: 12px;
+      top:7px;
+    }
+  }
+  .list{
+    height: 240px;
+    width: 100%;
+
+    li{
+      height: 30px;
+      &:nth-child(even){
+        background: #fafafa;
+      }
+    }
+  }
+  .footer{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: right;
+    padding: 0 12px;
+    a{
+      color: #777877;
+    }
+  }
+}
